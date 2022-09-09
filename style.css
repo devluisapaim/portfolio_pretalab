@@ -9,27 +9,34 @@
     --abeezee: 'ABeeZee', sans-serif;
 }
 
-body {
+* {
     margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 /* HEADER */
-nav {
+.nav-menu {
     background-color: var(--purple);
-    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    height: 70px;
 }
+
 
 nav ul {
     display: flex;
     justify-content: flex-end;
+    list-style: none;
+
+    margin-top: 1.4em;    
 }
 
 nav ul li {
     font-family: var(--openSans);
     font-size: 20px;
     font-weight: bold;
-    list-style: none;
-
+    
     margin: 0 1.5em;
     cursor: pointer;
 }
@@ -60,10 +67,16 @@ section h2, h4 {
 section p {
     font-family: var(--abeezee);
     font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #sobre, #portfolio {
     background-color: var(--cream);
+}
+
+.conteiner-sobre {
+    margin-top: 5em;
 }
 
 .conteiner-sobre img {
@@ -77,9 +90,6 @@ section p {
     margin: 3px 0;
 }
 
-.conteiner-sobre h1 {
-}
-
 .conteiner-sobre p {
     width: 50%;
     margin: 1em auto;
@@ -90,18 +100,25 @@ section p {
 }
 
 .conteiner-formacao, .conteiner-portfolio {
-    margin: 2em 10em;
+    margin: 2.5em 13em;
     text-align: left;
     width: 70%;
 }
 
 section li {
-    list-style: none;
     margin: 2em 10em;
 }
 
 section li h4 {
     color: var(--gold);
+    margin-bottom: 8px;
+}
+
+#portfolio a {
+    text-decoration: none;
+    color: var(--earth);
+    font-family: var(--abeezee);
+    font-size: 14px;
 }
 
 #contato {
@@ -113,7 +130,8 @@ section li h4 {
 
 #contato li {
     list-style: none;
-    margin: 1em;
+    margin-left: 1.5em;
+    margin-bottom: 0.5em;
     color: #FFFFFF;
 }
 
