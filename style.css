@@ -1,6 +1,7 @@
 :root {
-    --purple: #4608AE;
-    --lightPurple: #C2BCE8;
+    --darkOrange: #D45D18;
+    --orange: #E78145;
+    --lightOrange: #FFC47E;
     --gold: #5C3615;
     --cream: #F0EEEE;
     --darkCream: #E5E5E5;
@@ -17,12 +18,11 @@
 
 /* HEADER */
 .nav-menu {
-    background-color: var(--purple);
+    background-color: var(--darkOrange);
     position: fixed;
     width: 100%;
     height: 70px;
 }
-
 
 nav ul {
     display: flex;
@@ -52,21 +52,16 @@ nav a {
 
 /* MAIN */
 
-section {
+.section {
     text-align: center;
     padding-top: 1.5em;
     padding-bottom: 2em;
     height: 33%;
 }
 
-section h2, h4 {
-    color: var(--purple);
-    font-family: var(--openSans);
-}
-
-section p {
+.section p {
     font-family: var(--abeezee);
-    font-size: 15px;
+    font-size: 16px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -75,68 +70,95 @@ section p {
     background-color: var(--cream);
 }
 
-.conteiner-sobre {
-    margin-top: 5em;
-}
-
-.conteiner-sobre img {
-    border-radius: 50%;
-    width: 15%;
-    margin-bottom: 1em;
-}
-
-.conteiner-sobre h1, h3 {
-    font-family: var(--openSans);
-    margin: 3px 0;
-}
-
-.conteiner-sobre p {
-    width: 50%;
-    margin: 1em auto;
-}
-
 #formacao {
     background-color: var(--darkCream);
 }
 
-.conteiner-formacao, .conteiner-portfolio {
-    margin: 4em 13em;
-    text-align: left;
-    width: 70%;
+.name {
+    color: var(--darkOrange);
+    font-size: xx-large;
 }
 
-section li {
-    margin: 2em 10em;
+.sub-name {
+    color: var(--orange);
 }
 
-section li h4 {
+.container-sobre {
+    margin-top: 5em;
+}
+
+.container-sobre img {
+    border-radius: 50%;
+    border: solid 1px var(--lightOrange);
+    width: 14%;
+    margin-bottom: 1em;
+}
+
+.container-sobre h1, h3 {
+    font-family: var(--openSans);
+    margin: 3px 0;
+}
+
+.container-sobre p {
+    width: 50%;
+    margin: 1em auto;
+}
+
+.container-formacao, .container-portfolio {
+    margin-top: 3.5em;
+    text-align: start;
+}
+
+.container-formacao h2, .container-portfolio h2 {
+    color: var(--darkOrange);
+    font-family: var(--openSans);
+    margin-left: 23%;
+    font-size: x-large;    
+}
+
+.lista {
+    margin-left: 32%;
+    margin-top: 2.5em;
+}
+
+.lista h4 {
     color: var(--gold);
-    margin-bottom: 8px;
+    font-family: var(--openSans);
+    font-size: larger;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
-#portfolio a {
+.item-lista a {
     text-decoration: none;
     color: var(--earth);
     font-family: var(--abeezee);
-    font-size: 14px;
+    font-size: 15px;
 }
 
-#contato {
-    background-color: var(--purple);
+/* FOOTER */
+.contato {
+    background-color: var(--darkOrange);
     padding: 1.5em 0;
     font-family: var(--openSans);
     font-size: 14px;
 }
 
-#contato li {
+.contato li {
     list-style: none;
-    margin-left: 3em;
+    margin-left: 5em;
     margin-bottom: 0.5em;
+}
+
+.contato a {
+    text-decoration: none;
     color: #FFFFFF;
 }
 
-#contato a {
-    text-decoration: none;
+.contato i {
     margin-right: 5px;
-    color: #FFFFFF;
+}
+
+@media (max-width: 450px) {
+    
 }
