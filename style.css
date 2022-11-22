@@ -122,15 +122,17 @@ nav a {
     margin-top: 2.5em;
 }
 
-.lista h4 a {
+.destaque_lista {
     color: var(--gold);
     font-family: var(--openSans);
     font-size: larger;
     margin-top: 20px;
     margin-bottom: 10px;
+
+    text-decoration: none;
 }
 
-.item-lista a {
+.lista_links {
     text-decoration: none;
     color: var(--earth);
     font-family: var(--abeezee);
