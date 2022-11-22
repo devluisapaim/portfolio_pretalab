@@ -122,7 +122,7 @@ nav a {
     margin-top: 2.5em;
 }
 
-.lista h4 {
+.lista h4 a {
     color: var(--gold);
     font-family: var(--openSans);
     font-size: larger;
